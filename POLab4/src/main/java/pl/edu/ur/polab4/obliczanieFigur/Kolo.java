@@ -4,6 +4,11 @@ public class Kolo {
 
     private double promien;
 
+    public Kolo(double promien){
+
+        this.promien = promien;
+    }
+
     public Kolo() {}
 
     public double getPromien(){

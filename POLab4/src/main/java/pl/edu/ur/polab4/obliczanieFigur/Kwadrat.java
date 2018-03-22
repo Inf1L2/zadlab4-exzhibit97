@@ -2,12 +2,22 @@ package pl.edu.ur.polab4.obliczanieFigur;
 
 public class Kwadrat {
 
-    public double bok;
+    private double bok;
 
     public Kwadrat(double bok) {
 
         this.bok = bok;
 
+    }
+
+    public Kwadrat(){}
+
+    public double getBok(){
+        return this.bok;
+    }
+
+    public void setBok(double bok){
+        this.bok = bok;
     }
 
     public void pole() {

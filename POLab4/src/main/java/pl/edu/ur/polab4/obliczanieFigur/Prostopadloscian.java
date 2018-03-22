@@ -2,9 +2,9 @@ package pl.edu.ur.polab4.obliczanieFigur;
 
 public class Prostopadloscian {
 
-    public double dlugosc;
-    public double szerokosc;
-    public double wysokosc;
+    private double dlugosc;
+    private double szerokosc;
+    private double wysokosc;
 
     public Prostopadloscian(double dlugosc, double szerokosc, double wysokosc) {
 
@@ -14,10 +14,32 @@ public class Prostopadloscian {
 
     }
 
-    public void objetosc() {
+    public Prostopadloscian(){}
 
+    public double getDlugosc(){
+        return this.dlugosc;
+    }
+
+    public double getSzerokosc(){
+        return this.szerokosc;
+    }
+
+    public double getWyskosc(){
+        return this.wysokosc;
+    }
+
+    public void setDlugosc(double dlugosc){
+        this.dlugosc = dlugosc;
+    }
+
+    public void setSzerokosc(double szerokosc){
+        this.szerokosc = szerokosc;
+    }
+    public void setWysokosc(double wysokosc){
+        this.wysokosc = wysokosc;
+    }
+    public void objetosc() {
         double objetosc = dlugosc*szerokosc*wysokosc;
         System.out.println("Objetosc prostopadloscianu wynosi: " + objetosc);
-
     }
 }

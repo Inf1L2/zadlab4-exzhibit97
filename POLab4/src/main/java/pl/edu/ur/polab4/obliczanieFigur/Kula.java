@@ -2,12 +2,22 @@ package pl.edu.ur.polab4.obliczanieFigur;
 
 public class Kula {
 
-    public double promien;
+    private double promien;
 
     public Kula(double promien) {
 
         this.promien = promien;
 
+    }
+
+    public Kula(){}
+
+    public double getPromien(){
+        return this.promien;
+    }
+
+    public void setPromien(double promien){
+        this.promien = promien;
     }
 
     public void objetosc() {
